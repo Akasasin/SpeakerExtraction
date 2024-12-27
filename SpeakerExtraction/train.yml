@@ -1,0 +1,62 @@
+#### general settings
+name: GP_SpExDPConformer
+use_tb_logger: true
+#### datasets
+datasets:
+  num_workers: 1
+  batch_size: 12
+  fs: 8000
+  chunk_len: 4
+  chunk_size: 32000
+  labels_txt: ./datasets/scp/labels.txt
+  label_length: 51
+
+  train:
+    mix_scp: ./datasets/scp/tr_mix.scp
+    ref_scp: ./datasets/scp/tr_ref.scp
+    tar_scp: ./datasets/scp/tr_tar.scp
+    sr: 8000
+
+  val:
+    mix_scp: ./datasets/scp/cv_mix.scp
+    ref_scp: ./datasets/scp/cv_ref.scp
+    tar_scp: ./datasets/scp/cv_tar.scp
+    sr: 8000
+
+#### training settings: learning rate scheme, loss
+train:
+  epoch: 100
+  early_stop: 10
+  path: ./checkpoint
+  gpuid: [0]
+  alpha: 0.1
+  beta: 0.1
+  gamma: 10
+
+#### Optimizer settings
+optim:
+  name: Adam   ### Adam, RMS prop, SGD
+  lr: !!float 1e-4
+  momentum: 0
+  weight_decay: 0
+  clip_norm: 5
+
+#### scheduler settings
+scheduler:
+  min_lr: !!float 1e-8
+  patience: 2
+  factor: 0.5
+
+#### Resume training settings
+resume:
+  state: false
+  path: ./checkpoint
+
+
+#### logger
+logger:
+  name: GP_SpEx+
+  path: ./checkpoint
+  screen: true
+  tofile: true
+  print_freq: 1000

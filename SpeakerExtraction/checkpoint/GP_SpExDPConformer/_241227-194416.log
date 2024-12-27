@@ -1,0 +1,62 @@
+24-12-27 19:44:16 [C:\Users\Akasasin\PycharmProjects\SpeakerExtraction\SpeakerExtraction\train.py:22 - INFO ] Building the model
+24-12-27 19:44:16 [C:\Users\Akasasin\PycharmProjects\SpeakerExtraction\SpeakerExtraction\train.py:26 - INFO ] Building the optimizer
+24-12-27 19:44:16 [C:\Users\Akasasin\PycharmProjects\SpeakerExtraction\SpeakerExtraction\train.py:29 - INFO ] Building the dataloader
+24-12-27 19:44:16 [C:\Users\Akasasin\PycharmProjects\SpeakerExtraction\SpeakerExtraction\train.py:46 - INFO ] Building the Trainer
+24-12-27 19:44:16 [C:\Users\Akasasin\PycharmProjects\SpeakerExtraction\SpeakerExtraction\trainer.py:28 - INFO ] Load Nvidia GPU .....
+24-12-27 19:44:16 [C:\Users\Akasasin\PycharmProjects\SpeakerExtraction\SpeakerExtraction\trainer.py:32 - INFO ] Loading Dual-Path-RNN parameters: 7.524 Mb
+24-12-27 19:44:16 [C:\Users\Akasasin\PycharmProjects\SpeakerExtraction\SpeakerExtraction\trainer.py:53 - INFO ] Gradient clipping by 5, default L2
+24-12-27 19:44:17 [C:\Users\Akasasin\PycharmProjects\SpeakerExtraction\SpeakerExtraction\trainer.py:102 - INFO ] Start Validation from epoch: 0, iter: 0
+24-12-27 19:44:33 [C:\Users\Akasasin\PycharmProjects\SpeakerExtraction\SpeakerExtraction\trainer.py:134 - INFO ] Finished *** <epoch:0, iter:1, lr:1.000e-04, sisnr loss:0.000, accuracy: 0.000, Total time:0.271 min> 
+24-12-27 19:44:33 [C:\Users\Akasasin\PycharmProjects\SpeakerExtraction\SpeakerExtraction\trainer.py:147 - INFO ] Starting epoch from 0, loss = 0.0000
+24-12-27 19:44:33 [C:\Users\Akasasin\PycharmProjects\SpeakerExtraction\SpeakerExtraction\trainer.py:58 - INFO ] Start training from epoch: 1, iter: 0
+24-12-27 19:44:40 [C:\Users\Akasasin\PycharmProjects\SpeakerExtraction\SpeakerExtraction\trainer.py:98 - INFO ] Finished *** <epoch:1, iter:1, lr:1.000e-04, sisnr loss:0.000, accuracy:0.000, Total time:0.121 min> 
+24-12-27 19:44:40 [C:\Users\Akasasin\PycharmProjects\SpeakerExtraction\SpeakerExtraction\trainer.py:102 - INFO ] Start Validation from epoch: 1, iter: 0
+24-12-27 19:44:47 [C:\Users\Akasasin\PycharmProjects\SpeakerExtraction\SpeakerExtraction\trainer.py:134 - INFO ] Finished *** <epoch:1, iter:1, lr:1.000e-04, sisnr loss:0.000, accuracy: 0.000, Total time:0.119 min> 
+24-12-27 19:44:47 [C:\Users\Akasasin\PycharmProjects\SpeakerExtraction\SpeakerExtraction\trainer.py:165 - INFO ] No improvement, Best Loss: 0.0000, Accuracy: 0.0000
+24-12-27 19:44:47 [C:\Users\Akasasin\PycharmProjects\SpeakerExtraction\SpeakerExtraction\trainer.py:58 - INFO ] Start training from epoch: 2, iter: 0
+24-12-27 19:44:54 [C:\Users\Akasasin\PycharmProjects\SpeakerExtraction\SpeakerExtraction\trainer.py:98 - INFO ] Finished *** <epoch:2, iter:1, lr:1.000e-04, sisnr loss:0.000, accuracy:0.000, Total time:0.119 min> 
+24-12-27 19:44:54 [C:\Users\Akasasin\PycharmProjects\SpeakerExtraction\SpeakerExtraction\trainer.py:102 - INFO ] Start Validation from epoch: 2, iter: 0
+24-12-27 19:45:02 [C:\Users\Akasasin\PycharmProjects\SpeakerExtraction\SpeakerExtraction\trainer.py:134 - INFO ] Finished *** <epoch:2, iter:1, lr:1.000e-04, sisnr loss:0.000, accuracy: 0.000, Total time:0.118 min> 
+24-12-27 19:45:02 [C:\Users\Akasasin\PycharmProjects\SpeakerExtraction\SpeakerExtraction\trainer.py:165 - INFO ] No improvement, Best Loss: 0.0000, Accuracy: 0.0000
+24-12-27 19:45:02 [C:\Users\Akasasin\PycharmProjects\SpeakerExtraction\SpeakerExtraction\trainer.py:58 - INFO ] Start training from epoch: 3, iter: 0
+24-12-27 19:45:09 [C:\Users\Akasasin\PycharmProjects\SpeakerExtraction\SpeakerExtraction\trainer.py:98 - INFO ] Finished *** <epoch:3, iter:1, lr:1.000e-04, sisnr loss:0.000, accuracy:0.000, Total time:0.118 min> 
+24-12-27 19:45:09 [C:\Users\Akasasin\PycharmProjects\SpeakerExtraction\SpeakerExtraction\trainer.py:102 - INFO ] Start Validation from epoch: 3, iter: 0
+24-12-27 19:45:16 [C:\Users\Akasasin\PycharmProjects\SpeakerExtraction\SpeakerExtraction\trainer.py:134 - INFO ] Finished *** <epoch:3, iter:1, lr:1.000e-04, sisnr loss:0.000, accuracy: 0.000, Total time:0.118 min> 
+24-12-27 19:45:16 [C:\Users\Akasasin\PycharmProjects\SpeakerExtraction\SpeakerExtraction\trainer.py:165 - INFO ] No improvement, Best Loss: 0.0000, Accuracy: 0.0000
+24-12-27 19:45:16 [C:\Users\Akasasin\PycharmProjects\SpeakerExtraction\SpeakerExtraction\trainer.py:58 - INFO ] Start training from epoch: 4, iter: 0
+24-12-27 19:45:23 [C:\Users\Akasasin\PycharmProjects\SpeakerExtraction\SpeakerExtraction\trainer.py:98 - INFO ] Finished *** <epoch:4, iter:1, lr:1.000e-04, sisnr loss:0.000, accuracy:0.000, Total time:0.118 min> 
+24-12-27 19:45:23 [C:\Users\Akasasin\PycharmProjects\SpeakerExtraction\SpeakerExtraction\trainer.py:102 - INFO ] Start Validation from epoch: 4, iter: 0
+24-12-27 19:45:30 [C:\Users\Akasasin\PycharmProjects\SpeakerExtraction\SpeakerExtraction\trainer.py:134 - INFO ] Finished *** <epoch:4, iter:1, lr:1.000e-04, sisnr loss:0.000, accuracy: 0.000, Total time:0.118 min> 
+24-12-27 19:45:30 [C:\Users\Akasasin\PycharmProjects\SpeakerExtraction\SpeakerExtraction\trainer.py:165 - INFO ] No improvement, Best Loss: 0.0000, Accuracy: 0.0000
+24-12-27 19:45:30 [C:\Users\Akasasin\PycharmProjects\SpeakerExtraction\SpeakerExtraction\trainer.py:58 - INFO ] Start training from epoch: 5, iter: 0
+24-12-27 19:45:37 [C:\Users\Akasasin\PycharmProjects\SpeakerExtraction\SpeakerExtraction\trainer.py:98 - INFO ] Finished *** <epoch:5, iter:1, lr:5.000e-05, sisnr loss:0.000, accuracy:0.000, Total time:0.118 min> 
+24-12-27 19:45:37 [C:\Users\Akasasin\PycharmProjects\SpeakerExtraction\SpeakerExtraction\trainer.py:102 - INFO ] Start Validation from epoch: 5, iter: 0
+24-12-27 19:45:44 [C:\Users\Akasasin\PycharmProjects\SpeakerExtraction\SpeakerExtraction\trainer.py:134 - INFO ] Finished *** <epoch:5, iter:1, lr:5.000e-05, sisnr loss:0.000, accuracy: 0.000, Total time:0.118 min> 
+24-12-27 19:45:44 [C:\Users\Akasasin\PycharmProjects\SpeakerExtraction\SpeakerExtraction\trainer.py:165 - INFO ] No improvement, Best Loss: 0.0000, Accuracy: 0.0000
+24-12-27 19:45:44 [C:\Users\Akasasin\PycharmProjects\SpeakerExtraction\SpeakerExtraction\trainer.py:58 - INFO ] Start training from epoch: 6, iter: 0
+24-12-27 19:45:51 [C:\Users\Akasasin\PycharmProjects\SpeakerExtraction\SpeakerExtraction\trainer.py:98 - INFO ] Finished *** <epoch:6, iter:1, lr:5.000e-05, sisnr loss:0.000, accuracy:0.000, Total time:0.118 min> 
+24-12-27 19:45:51 [C:\Users\Akasasin\PycharmProjects\SpeakerExtraction\SpeakerExtraction\trainer.py:102 - INFO ] Start Validation from epoch: 6, iter: 0
+24-12-27 19:45:58 [C:\Users\Akasasin\PycharmProjects\SpeakerExtraction\SpeakerExtraction\trainer.py:134 - INFO ] Finished *** <epoch:6, iter:1, lr:5.000e-05, sisnr loss:0.000, accuracy: 0.000, Total time:0.118 min> 
+24-12-27 19:45:58 [C:\Users\Akasasin\PycharmProjects\SpeakerExtraction\SpeakerExtraction\trainer.py:165 - INFO ] No improvement, Best Loss: 0.0000, Accuracy: 0.0000
+24-12-27 19:45:58 [C:\Users\Akasasin\PycharmProjects\SpeakerExtraction\SpeakerExtraction\trainer.py:58 - INFO ] Start training from epoch: 7, iter: 0
+24-12-27 19:46:05 [C:\Users\Akasasin\PycharmProjects\SpeakerExtraction\SpeakerExtraction\trainer.py:98 - INFO ] Finished *** <epoch:7, iter:1, lr:5.000e-05, sisnr loss:0.000, accuracy:0.000, Total time:0.117 min> 
+24-12-27 19:46:05 [C:\Users\Akasasin\PycharmProjects\SpeakerExtraction\SpeakerExtraction\trainer.py:102 - INFO ] Start Validation from epoch: 7, iter: 0
+24-12-27 19:46:12 [C:\Users\Akasasin\PycharmProjects\SpeakerExtraction\SpeakerExtraction\trainer.py:134 - INFO ] Finished *** <epoch:7, iter:1, lr:5.000e-05, sisnr loss:0.000, accuracy: 0.000, Total time:0.118 min> 
+24-12-27 19:46:12 [C:\Users\Akasasin\PycharmProjects\SpeakerExtraction\SpeakerExtraction\trainer.py:165 - INFO ] No improvement, Best Loss: 0.0000, Accuracy: 0.0000
+24-12-27 19:46:12 [C:\Users\Akasasin\PycharmProjects\SpeakerExtraction\SpeakerExtraction\trainer.py:58 - INFO ] Start training from epoch: 8, iter: 0
+24-12-27 19:46:19 [C:\Users\Akasasin\PycharmProjects\SpeakerExtraction\SpeakerExtraction\trainer.py:98 - INFO ] Finished *** <epoch:8, iter:1, lr:2.500e-05, sisnr loss:0.000, accuracy:0.000, Total time:0.119 min> 
+24-12-27 19:46:19 [C:\Users\Akasasin\PycharmProjects\SpeakerExtraction\SpeakerExtraction\trainer.py:102 - INFO ] Start Validation from epoch: 8, iter: 0
+24-12-27 19:46:26 [C:\Users\Akasasin\PycharmProjects\SpeakerExtraction\SpeakerExtraction\trainer.py:134 - INFO ] Finished *** <epoch:8, iter:1, lr:2.500e-05, sisnr loss:0.000, accuracy: 0.000, Total time:0.118 min> 
+24-12-27 19:46:26 [C:\Users\Akasasin\PycharmProjects\SpeakerExtraction\SpeakerExtraction\trainer.py:165 - INFO ] No improvement, Best Loss: 0.0000, Accuracy: 0.0000
+24-12-27 19:46:26 [C:\Users\Akasasin\PycharmProjects\SpeakerExtraction\SpeakerExtraction\trainer.py:58 - INFO ] Start training from epoch: 9, iter: 0
+24-12-27 19:46:33 [C:\Users\Akasasin\PycharmProjects\SpeakerExtraction\SpeakerExtraction\trainer.py:98 - INFO ] Finished *** <epoch:9, iter:1, lr:2.500e-05, sisnr loss:0.000, accuracy:0.000, Total time:0.118 min> 
+24-12-27 19:46:33 [C:\Users\Akasasin\PycharmProjects\SpeakerExtraction\SpeakerExtraction\trainer.py:102 - INFO ] Start Validation from epoch: 9, iter: 0
+24-12-27 19:46:40 [C:\Users\Akasasin\PycharmProjects\SpeakerExtraction\SpeakerExtraction\trainer.py:134 - INFO ] Finished *** <epoch:9, iter:1, lr:2.500e-05, sisnr loss:0.000, accuracy: 0.000, Total time:0.117 min> 
+24-12-27 19:46:40 [C:\Users\Akasasin\PycharmProjects\SpeakerExtraction\SpeakerExtraction\trainer.py:165 - INFO ] No improvement, Best Loss: 0.0000, Accuracy: 0.0000
+24-12-27 19:46:40 [C:\Users\Akasasin\PycharmProjects\SpeakerExtraction\SpeakerExtraction\trainer.py:58 - INFO ] Start training from epoch: 10, iter: 0
+24-12-27 19:46:47 [C:\Users\Akasasin\PycharmProjects\SpeakerExtraction\SpeakerExtraction\trainer.py:98 - INFO ] Finished *** <epoch:10, iter:1, lr:2.500e-05, sisnr loss:0.000, accuracy:0.000, Total time:0.118 min> 
+24-12-27 19:46:47 [C:\Users\Akasasin\PycharmProjects\SpeakerExtraction\SpeakerExtraction\trainer.py:102 - INFO ] Start Validation from epoch: 10, iter: 0
+24-12-27 19:46:55 [C:\Users\Akasasin\PycharmProjects\SpeakerExtraction\SpeakerExtraction\trainer.py:134 - INFO ] Finished *** <epoch:10, iter:1, lr:2.500e-05, sisnr loss:0.000, accuracy: 0.000, Total time:0.118 min> 
+24-12-27 19:46:55 [C:\Users\Akasasin\PycharmProjects\SpeakerExtraction\SpeakerExtraction\trainer.py:165 - INFO ] No improvement, Best Loss: 0.0000, Accuracy: 0.0000
+24-12-27 19:46:55 [C:\Users\Akasasin\PycharmProjects\SpeakerExtraction\SpeakerExtraction\trainer.py:173 - INFO ] Stop training cause no improvement for 10 epochs
+24-12-27 19:46:55 [C:\Users\Akasasin\PycharmProjects\SpeakerExtraction\SpeakerExtraction\trainer.py:176 - INFO ] Training for 10/100 epochs done!

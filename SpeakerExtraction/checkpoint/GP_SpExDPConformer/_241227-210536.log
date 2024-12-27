@@ -1,0 +1,8 @@
+24-12-27 21:05:36 [C:\Users\Akasasin\PycharmProjects\SpeakerExtraction\SpeakerExtraction\train.py:22 - INFO ] Building the model
+24-12-27 21:05:36 [C:\Users\Akasasin\PycharmProjects\SpeakerExtraction\SpeakerExtraction\train.py:26 - INFO ] Building the optimizer
+24-12-27 21:05:36 [C:\Users\Akasasin\PycharmProjects\SpeakerExtraction\SpeakerExtraction\train.py:29 - INFO ] Building the dataloader
+24-12-27 21:05:36 [C:\Users\Akasasin\PycharmProjects\SpeakerExtraction\SpeakerExtraction\train.py:46 - INFO ] Building the Trainer
+24-12-27 21:05:36 [C:\Users\Akasasin\PycharmProjects\SpeakerExtraction\SpeakerExtraction\trainer.py:28 - INFO ] Load Nvidia GPU .....
+24-12-27 21:05:37 [C:\Users\Akasasin\PycharmProjects\SpeakerExtraction\SpeakerExtraction\trainer.py:32 - INFO ] Loading Dual-Path-RNN parameters: 7.524 Mb
+24-12-27 21:05:37 [C:\Users\Akasasin\PycharmProjects\SpeakerExtraction\SpeakerExtraction\trainer.py:53 - INFO ] Gradient clipping by 5, default L2
+24-12-27 21:05:37 [C:\Users\Akasasin\PycharmProjects\SpeakerExtraction\SpeakerExtraction\trainer.py:102 - INFO ] Start Validation from epoch: 0, iter: 0
