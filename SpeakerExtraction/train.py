@@ -1,7 +1,8 @@
-﻿import argparse
+﻿import yaml
+import argparse
 import logging
-import utils
-from ModelHelper import *
+# from .utils import parse
+from model_helper import make_optimizer, make_dataloader
 from logger import set_logger
 from torch.optim.lr_scheduler import ReduceLROnPlateau
 from trainer import Trainer
@@ -10,12 +11,19 @@ from trainer import Trainer
 from models.SpExPlus.SpExPlus import SpExPlus
 from models.SpExDPConformer.SpExDPConformer import SpExDPConformer
 
+def parse(opt_path):
+    with open(opt_path, mode='r') as f:
+        opt = yaml.load(f, Loader=yaml.FullLoader)
+        opt['resume']['path'] = opt['resume']['path'] + '/' + opt['name']
+        opt['logger']['path'] = opt['logger']['path'] + '/' + opt['name']
+    return opt
+
 
 def train():
     parser = argparse.ArgumentParser(description='Parameters for training')
     parser.add_argument('--opt', type=str, default='train.yml', help='Path to option YAML file.')
     args = parser.parse_args()
-    opt = utils.parse(args.opt)
+    opt = parse(args.opt)
     set_logger.setup_logger(opt['logger']['name'], opt['logger']['path'], screen=opt['logger']['screen'], tofile=opt['logger']['tofile'])
     logger = logging.getLogger(opt['logger']['name'])
 

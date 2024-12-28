@@ -4,8 +4,9 @@ import torch.nn as nn
 import torch.nn.functional as F
 from torch.autograd import Variable
 
-from SpeakerExtraction.models.Conformer.conformer import Attention
-from SpeakerExtraction.utils import check_parameters
+from ..Conformer.conformer import Attention, check_parameters
+# from ...utils import check_parameters
+
 
 
 class PositionalEncoding(nn.Module):

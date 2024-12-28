@@ -4,10 +4,10 @@ use_tb_logger: true
 #### datasets
 datasets:
   num_workers: 1
-  batch_size: 12
+  batch_size: 1
   fs: 8000
   chunk_len: 4
-  chunk_size: 32000
+  chunk_size: 16000
   labels_txt: ./datasets/scp/labels.txt
   label_length: 51
 
@@ -15,13 +15,13 @@ datasets:
     mix_scp: ./datasets/scp/tr_mix.scp
     ref_scp: ./datasets/scp/tr_ref.scp
     tar_scp: ./datasets/scp/tr_tar.scp
-    sr: 8000
+    sr: 16000
 
   val:
     mix_scp: ./datasets/scp/cv_mix.scp
     ref_scp: ./datasets/scp/cv_ref.scp
     tar_scp: ./datasets/scp/cv_tar.scp
-    sr: 8000
+    sr: 16000
 
 #### training settings: learning rate scheme, loss
 train:

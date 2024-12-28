@@ -1,7 +1,7 @@
 from torch.utils.data import DataLoader, Dataset
 from torch.utils.data.dataloader import default_collate
-from SpeakerExtraction.dataloader.AudioReader import AudioReader
-from SpeakerExtraction.dataloader.LabelReader import LabelReader
+from .AudioReader import AudioReader
+from .LabelReader import LabelReader
 import torch.nn.functional as F
 import random
 
@@ -42,7 +42,6 @@ class Datasets(Dataset):
         mix = self.mix_audio[key]
         ref = self.ref_audio[key]
         tar = self.tar_audio[key]
-
         return {
             'mix': mix,
             'ref': ref,

@@ -2,8 +2,8 @@
 import torch
 import torch.nn as nn
 import torch.nn.functional as F
-from SpeakerExtraction.utils import check_parameters, create_chunks, merge_chunks
-from SpeakerExtraction.models.my_conformer.Conformer import ConformerBlock
+from .utils import check_parameters, create_chunks, merge_chunks
+from ..my_conformer.Conformer import ConformerBlock
 
 
 

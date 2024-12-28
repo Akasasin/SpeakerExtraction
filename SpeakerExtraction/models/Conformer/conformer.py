@@ -5,8 +5,12 @@ import torch.nn.functional as F
 from einops import rearrange
 from einops.layers.torch import Rearrange
 
-from SpeakerExtraction.utils import check_parameters
+# from ...utils import check_parameters
 
+
+def check_parameters(net):
+    parameters = sum(param.numel() for param in net.parameters())
+    return parameters / 10 ** 6
 
 def exists(val):
     return val is not None

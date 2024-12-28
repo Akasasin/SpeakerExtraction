@@ -1,11 +1,31 @@
 import torch
 import soundfile
 import librosa
-from SpeakerExtraction.utils import handle_scp
+# from ..utils import handle_scp
 
+
+def handle_scp(scp_path):
+    scp_dict = dict()
+    line = 0
+    lines = open(scp_path, 'r').readlines()
+    print("original path: ", lines)
+    for l in lines:
+        scp_parts = l.strip().split()
+        line += 1
+        if len(scp_parts) != 2:
+            raise RuntimeError("For {}, format error in line[{:d}]: {}".format(scp_path, line, scp_parts))
+        if len(scp_parts) == 2:
+            key, value = scp_parts
+            if key in scp_dict:
+                raise ValueError("Duplicated key \'{0}\' exists in {1}".format(key, scp_path))
+            scp_dict[key] = value.replace("\\", "/")
+
+    return scp_dict
 
 def read_wav(filepath, samplerate):
+    # print("the input libsora path is : ", filepath)
     src, _ = librosa.load(filepath, sr=samplerate)
+    # print("libsora reading donw....")
     src = torch.tensor(src, dtype=torch.float32).squeeze()
     return src
 
@@ -19,9 +39,12 @@ class AudioReader(object):
         super(AudioReader, self).__init__()
         self.samplerate = samplerate
         self.index_dict = handle_scp(scp_path)
+        print("index_dict for libsora； ", self.index_dict)
         self.keys = list(self.index_dict.keys())
 
     def _load(self, key):
+        print("self.index_dict[key]: ", self.index_dict[key])
+        print("All input file path: ", self.index_dict)
         src = read_wav(self.index_dict[key], samplerate=self.samplerate)
         return src
 

@@ -37,7 +37,8 @@ class Trainer(object):
             self.logger.info('Loading Dual-Path-RNN parameters: {:.3f} Mb'.format(check_parameters(self.net)))
 
         if opt['resume']['state']:
-            ckp = torch.load(os.path.join(opt['resume']['path'], 'best.pt'), map_location='cpu')
+            best_path = os.path.join(opt['resume']['path'], 'best.pt')
+            ckp = torch.load((best_path if os.path.exists(best_path) else os.path.join(opt['resume']['path'], 'last.pt')), map_location='cpu')
             self.cur_epoch = ckp['epoch']
             self.logger.info("Resume from checkpoint {}: epoch {:.3f}".format(opt['resume']['path'], self.cur_epoch))
             net.load_state_dict(ckp['model_state_dict'])
@@ -59,7 +60,7 @@ class Trainer(object):
         self.net.train()
         total_sisnr_loss = 0.0
         total_accuracy = 0.0
-
+        
         num_index = 1
         start_time = time.time()
         for egs in tqdm(self.train_dataloader):
@@ -68,7 +69,7 @@ class Trainer(object):
             tar = egs['tar'].to(self.device)
             label = egs['label'].to(self.device)
             self.optimizer.zero_grad()
-
+            print("step Training label: ", label)
             if self.gpuid:
                 out_s, out_m, out_l, spk_pred = torch.nn.parallel.data_parallel(self.net, (mix, ref), device_ids=self.gpuid)
             else:

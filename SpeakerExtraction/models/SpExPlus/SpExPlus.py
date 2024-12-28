@@ -1,7 +1,14 @@
 import torch
 import torch.nn as nn
 import torch.nn.functional as F
-from utils import check_parameters
+# from ...utils import check_parameters
+
+def check_parameters(net):
+    """
+        Returns module parameters. Mb
+    """
+    parameters = sum(param.numel() for param in net.parameters())
+    return parameters / 10 ** 6
 
 
 class GlobalLayerNorm(nn.Module):
